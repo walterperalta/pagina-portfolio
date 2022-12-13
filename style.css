@@ -8,19 +8,19 @@
 
 @font-face {
     font-family: Poppins-Bold;
-    src: url(/Poppins/Poppins-Bold.ttf);
+    src: url(./Poppins/Poppins-Bold.ttf);
 }
 @font-face {
     font-family: Poppins-BoldItalic;
-    src: url(/Poppins/Poppins-BoldItalic.ttf);
+    src: url(./Poppins/Poppins-BoldItalic.ttf);
 }
 @font-face {
     font-family: Poppins-ExtraLight;
-    src: url(/Poppins/Poppins-ExtraLight.ttf);
+    src: url(./Poppins/Poppins-ExtraLight.ttf);
 }
 @font-face {
     font-family: Poppins-ExtraLightItalic;
-    src: url(/Poppins/Poppins-ExtraLightItalic.ttf);
+    src: url(./Poppins/Poppins-ExtraLightItalic.ttf);
 }
 @font-face {
     font-family: Poppins-RegularItalic;
@@ -28,15 +28,15 @@
 }
 @font-face {
     font-family: Poppins-Regular;
-    src: url(/Poppins/Poppins-Regular.ttf);
+    src: url(./Poppins/Poppins-Regular.ttf);
 }
 @font-face {
     font-family: Poppins-Semibold;
-    src: url(/Poppins/Poppins-SemiBold.ttf);
+    src: url(./Poppins/Poppins-SemiBold.ttf);
 }
 @font-face {
     font-family: Poppins-SemiboldItalic;
-    src: url(/Poppins/Poppins-SemiBoldItalic.ttf);
+    src: url(./Poppins/Poppins-SemiBoldItalic.ttf);
 }
 
 .texto-azul{

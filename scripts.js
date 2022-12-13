@@ -3,28 +3,28 @@ Vue.createApp({
       return {
         paginas : [
           {
-            imagen : "/archivos/homeBanking.png",
+            imagen : "./archivos/homeBanking.png",
             titulo : "Royal OAK",
             descripcion : "Proyecto grupal final de un e-comerce de delivery de comidas y bebidas",
             repo : "https://github.com/walterperalta/RoyalOak",
             pagina : "http://royaloak25.herokuapp.com/web/index.html"
           },
           {
-            imagen : "/archivos/homeBanking.png",
+            imagen : "./archivos/homeBanking.png",
             titulo : "Homebanking",
             descripcion : "Proyecto individual en el que se construyó un homebanking con registro, login, manejo de cuentas y tarjetas, transferencias y préstamos.",
             repo : "https://github.com/walterperalta/HomeBanking-Aplication",
             pagina : "https://homebanking-aplication-production.up.railway.app/web/index.html"
           },
           {
-            imagen : "/archivos/homeBanking.png",
+            imagen : "./archivos/homeBanking.png",
             titulo : "Franco PetShop",
             descripcion : "petshop tradicional donde se consume una API para el listado de productos.",
             repo : "https://github.com/walterperalta/Franco-Petshop",
             pagina : "https://github.com/walterperalta/Franco-Petshop"
           },
           {
-            imagen : "/archivos/homeBanking.png",
+            imagen : "./archivos/homeBanking.png",
             titulo : "Api-Congressman",
             descripcion : "proyecto individual en el que se consume una api pública sobre los congresistas de USA, y se dispone la información usando cálculos y filtros.",
             repo : "https://github.com/walterperalta/Data-Insight-Group",

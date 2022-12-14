@@ -1,3 +1,4 @@
+console.log("holas")
 Vue.createApp({
     data() {
       return {
@@ -55,6 +56,7 @@ Vue.createApp({
     },
   
     created() {
+      console.log('hola desde vue')
     },
   
     methods: {

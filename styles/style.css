@@ -112,14 +112,15 @@ nav > .boton{
 }
 
 nav > .boton-orange{
-    font-size: 2vw;}
+    font-size: 2vw;
+}
 
 .boton-orange{
-    border-radius: 40px;
+    border-radius: 2.5rem;
     background-color: rgba(255, 255, 255, 0); 
     color: var(--orange) !important;
     padding: .5rem 1rem;
-    border: 2px solid var(--orange);
+    border: .15rem solid var(--orange);
     font-weight: 600 !important;
     text-decoration: none;
 }
@@ -144,6 +145,9 @@ main {
     gap: 1.5rem;
 }
 
+.inicio > h1{
+    font-size: 3.7vw  !important;
+}
 
 .logo-grande{
     width: 100%;
@@ -151,6 +155,7 @@ main {
 
 .logo-grande > img {
     width: 55vw;
+    height: auto;
 }
 
 /* Seccion Presentacion  */
@@ -171,7 +176,7 @@ main {
 
 .presentacion > p{
     max-width: 80%;
-    font-size: 3.7vh;
+    font-size: 3.3vh;
 }
 
 /* Seccion Skills */
@@ -196,12 +201,13 @@ main {
 
 
 .icono > img{
-    width: 55px;
+    width: auto;
+    height: 9vh;
 }
 
 .icono {
     background-color: var(--orange);
-    padding: 1rem;
+    border: 1.2rem solid var(--orange);
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -220,11 +226,11 @@ main {
 }
 
 h3 {
-    font-size: 2vw;
+    font-size: 4vh;
 }
 
 p{
-    font-size: 1.5vw;
+    font-size: 2.5vh;
 }
 
 /* Sección Proyectos */
@@ -264,13 +270,13 @@ p{
 
 .card > a{
     width: 100%;
-    height: 40%;
+    height: auto;
     border-radius: 1rem;
 }
 
 .screen {
     width: 100%;
-    height: 100%;
+    height: auto;
     border-radius: 1rem 1rem 0rem 0rem;
 }
 
@@ -287,6 +293,10 @@ p{
     display: flex;
     justify-content: space-between;
     width: 85%;
+}
+
+.card-botones > .boton-orange{
+    font-size: 1.5vw;
 }
 
 /* Sección Estudios */
@@ -329,10 +339,13 @@ p{
 
 .img-contacto {
     width: 20%;
+    display: flex;
+    justify-content: center;
 }
 
 .img-contacto > img{
-    width: 100%;
+    width: 23rem;
+    height: auto;
 }
 
 .iconos {
@@ -343,7 +356,7 @@ p{
 }
 
 .icono-contacto > img{
-    width: 45px;
+    height: 3.5rem;
     padding: .25rem;
 }
 
@@ -377,8 +390,11 @@ p{
 
 
 footer {
-    min-height: 10vh;
+    min-height: 5vh;
     width: 100%;
     background-color: var(--orange);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 

@@ -3,7 +3,7 @@ Vue.createApp({
       return {
         paginas : [
           {
-            imagen : "./archivos/homeBanking.png",
+            imagen : "https://i.postimg.cc/c1PBM9Kt/home-Banking.png",
             titulo : "Royal OAK",
             descripcion : "Proyecto grupal final de un e-comerce de delivery de comidas y bebidas",
             repo : "https://github.com/walterperalta/RoyalOak",
@@ -50,7 +50,7 @@ Vue.createApp({
             fecha : "marzo 2017 - presente",
             descripcion : "Cursando actualmente materias de segundo y tercer año."
           },
-        ]
+        ],
       }
     },
   

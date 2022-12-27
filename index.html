@@ -87,7 +87,27 @@
             </div>
             <section class="proyectos" id="proyectos">
                 <h1 class="titulo-azul">Proyectos de Desarrollo Web</h1>
-                <div class="card-container">
+                <div class="tarjeta">
+                    <article class="card-item" for v-for ="pagina in paginas">
+                        <div class="card-content">
+                            <figure class="card-picture">
+                                <img class="screen" src="./archivos/homeBanking.png" alt="homeBanking" >
+                            </figure>
+    
+                            <div class="card-texts">
+                                <h2 class="titulo-blanco">{{pagina.titulo}}</h2>
+                                <p class="card-paragraph texto-blanco-extralight">{{pagina.descripcion}}</p>
+                            </div>
+
+                            <div class="card-botones">
+                                <a :href="pagina.repo" target="_blank" class="boton-orange">Repositorio</a>
+                                <a :href="pagina.pagina" target="_blank" class="boton-orange">Pagina Web</a>
+                            </div>            
+                        </div>
+                    </article>
+                </div>
+
+                <!-- <div class="card-container">
                     <div class="card" for v-for ="pagina in paginas">
                         <a :href="pagina.pagina" target="_blank">
                             <img class="screen" :src="pagina.imagen" alt="homeBanking">
@@ -101,11 +121,16 @@
                             <a :href="pagina.pagina" target="_blank" class="boton-orange">Pagina Web</a>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </section>
+            <!-- <section class="desing">
+                <div class="img-container" v-for="desing in desings">
+                    <img :src="desing.url" :alt="desing.descripcion">
+                </div>
+            </section> -->
             <section class="estudios" id="estudios">
                 <h1 class="titulo-blanco">Estudios</h1>
-                <div class="card-container">
+                <div class="tarjeta">
                     <div class="card-outline" v-for="estudio in estudios">
                         <ul>
                             <li ><p class="titulo-blanco">{{estudio.titulo}}</p></li>
@@ -122,25 +147,14 @@
                     <img src="./archivos/simplificado1.png" alt="logo_horizontal">
                 </div>
                 <div class="iconos">
-                    <!-- <div class="grow"> -->
-                        <a href="https://wa.me/5493794097220" target="_blank" class="icono-contacto" @click=""><img src="./archivos/whatsapp (1).png" alt="icono"></a>
-                        <!-- <p class="texto-azul">+54 9 379 4097220</p> -->
-                    <!-- </div> -->
-                    <!-- <div class="grow"> -->
-                        <a href="https://wa.me/5493794097220" target="_blank" class="icono-contacto" @click=""><img src="./archivos/email.png" alt="icono"></a>
-                        <!-- <p class="texto-azul">+54 9 379 4097220</p> -->
-                    <!-- </div> -->
-                    <!-- <div class="grow"> -->
-                        <a href="https://wa.me/5493794097220" target="_blank" class="icono-contacto" @click=""><img src="./archivos/linkedin.png" alt="icono"></a>
-                        <!-- <p class="texto-azul">+54 9 379 4097220</p> -->
-                    <!-- </div> -->
-                    <!-- <div class="grow"> -->
-                        <a href="https://wa.me/5493794097220" target="_blank" class="icono-contacto" @click=""><img src="./archivos/github.png" alt="icono"></a>
-                        <!-- <p class="texto-azul">+54 9 379 4097220</p> -->
-                    <!-- </div> -->
+                    <a href="https://wa.me/5493794097220" target="_blank" class="icono-contacto" @click=""><img src="./archivos/whatsapp (1).png" alt="icono"></a>
+                    <a href="walterperalta896@gmail.com" target="_blank" class="icono-contacto" @click=""><img src="./archivos/email.png" alt="icono"></a>
+                    <a href="https://www.linkedin.com/in/walteroperalta/" target="_blank" class="icono-contacto" @click=""><img src="./archivos/linkedin.png" alt="icono"></a>
+                    <a href="https://github.com/walterperalta" target="_blank" class="icono-contacto" @click=""><img src="./archivos/github.png" alt="icono"></a>
                 </div>
                 <a href="./archivos/Walter Orlando Peralta1.pdf" target="_blank" class="boton-orange">Descargar CV</a>
             </section>
+
         </main>
         <footer>
             <p>Walter Peralta © 2022</p>

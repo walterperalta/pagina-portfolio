@@ -245,6 +245,7 @@ p{
 }
 
 
+/* 
 .card-container{
     display: flex;
     flex-wrap: wrap;
@@ -265,7 +266,7 @@ p{
     align-items: center;
     text-align: center;
     justify-content: space-between;
-    /* gap: 1rem; */
+    gap: 1rem;
 }
 
 .card > a{
@@ -289,21 +290,83 @@ p{
     height: 40%;
 }
 
+*/
+
+.tarjeta {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0rem 3rem;
+    /* min-height: 100vh; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.card-item {
+    background-color: var(--azul);
+    border-radius: 1rem;
+    padding-bottom: 1.5rem;
+    flex-basis: 20rem;
+    max-width: 26rem;
+    min-height: 65vh;
+    flex-grow: 1;
+}
+
+.card-content{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-picture {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.card-picture > img {
+    width: 100%;
+    border-radius: 1rem 1rem 0rem 0rem;
+
+}
+
+.card-texts {
+    min-height: 25vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0rem 1rem 1rem 1rem;
+    gap: .5rem;
+    padding-bottom: 1rem;
+    /* 
+    justify-content: flex-start;
+    min-height: 40%; 
+    */
+}
+
+.card-paragraph {
+    text-align: center;
+}
+
 .card-botones {
     display: flex;
     justify-content: space-between;
     width: 85%;
 }
 
+/*
 .card-botones > .boton-orange{
     font-size: 1.5vw;
-}
+} 
+*/
 
 /* Sección Estudios */
 
 .estudios {
     background-color: var(--azul);
     min-height: 85vh;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center ;
@@ -314,11 +377,14 @@ p{
 }
 
 .card-outline{
-    border-radius: 40px;
+    border-radius: 1rem;
     background-color: rgba(255, 255, 255, 0); 
     padding: 1rem 2.5rem;
     border: 2px solid var(--orange);
-    width: 40%;
+    flex-basis: 30rem;
+    max-width: 33rem;
+    min-height: 35vh;
+    flex-grow: 1;
 }
 
 /* Seccion Contacto */
@@ -368,25 +434,6 @@ p{
     justify-content: center;
     align-items: center;
 }
-
-
-/* .grow {
-    display: flex;
-    align-items: center;
-    flex-wrap: nowrap;
-    width: 4.5%;
-    overflow: hidden;
-    gap: .5rem;
-    position: relative;
-    transition: height 0.5s;
-    -webkit-transition: height 0.5s;
-}
-
-.grow:hover {
-    width: 30%;
-} */
-
-
 
 
 footer {

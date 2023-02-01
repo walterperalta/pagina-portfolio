@@ -10,158 +10,31 @@
 </head>
 <body>
     <div id="app">
-        <header>
-            <div class="img">
-                <img src="./archivos/simplificado1.png" alt="logo_horizontal">
-            </div>
-            <nav>
-                <a href="#inicio" class="boton boton-orange">Inicio</a>
-                <a href="#proyectos" class="boton boton-orange">Proyectos</a>
-                <a href="#estudios" class="boton boton-orange">Estudios</a>
-                <a href="#contacto" class="boton-orange">Contacto</a>
-            </nav>
-        </header>
-        <main>
-            <section class="inicio" id="inicio">
-                <div class="logo-grande">
-                    <img src="./archivos/Principal.png" alt="logo">
-                </div>
-                <h1 class="texto-azul-extralight">Desarrollo Web & Diseño Gráfico</h1>
-            </section>
-            <section class="presentacion">
-                <h1 class="titulo-blanco" >Hola, mi nombre es Walter!</h1>
-                <p>Tengo desarrollado proyectos de manera
-                    individual y grupal. Cuento con experiencia
-                    en coordinación de equipos en el
-                    voluntariado Rotaract, donde se desarrollan
-                    varias capacitaciones entre ellas de
-                    liderazgo.
-                    Además, de manera freelance he trabajado
-                    en el diseño, producción y edición de
-                    contenido multimedia.</p>
-            </section>
-            <div class="container">
-                <h1 class="titulo-azul">Skills</h1>
-                <div class="container-areas">
-                    <div class="area">
-                        <div class="icono">
-                            <img  src="./archivos/web-programming.png" alt="icono1">
-                        </div>
-                        <div>
-                            <h3 class="titulo-azul">Diseñador</h3>
-                            <p class="texto-azul">De manera freelance he trabajado
-                                en el diseño, producción y edición de
-                                contenido multimedia.
-                            </p>
-                        </div>
-                        <div>
-                            <p class="texto-orange-semibold">Cosas que diseño</p>
-                            <p class="texto-azul">Flyer, Logo, Banner</p>
-                        </div>
-                        <div>
-                            <p class="texto-orange-semibold">Herramientas de diseño</p>
-                            <p class="texto-azul">Photoshop Illustrator Canva Premiere Pro AfterEffects</p>
-                        </div>
-                    </div>
-                    <div class="area">
-                        <div class="icono" >
-                            <img src="./archivos/curve.png" alt="icono1">
-                        </div>
-                        <div>
-                            <h3 class="titulo-azul">Diseñador</h3>
-                            <p class="texto-azul">De manera freelance he trabajado
-                                en el diseño, producción y edición de
-                                contenido multimedia.
-                            </p>
-                        </div>
-                        <div>
-                            <p class="texto-orange-semibold">Cosas que diseño</p>
-                            <p class="texto-azul" >Flyer, Logo, Banner</p>
-                        </div>
-                        <div>
-                            <p class="texto-orange-semibold">Herramientas de diseño</p>
-                            <p class="texto-azul">Photoshop Illustrator Canva Premiere Pro AfterEffects</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <section class="proyectos" id="proyectos">
-                <h1 class="titulo-azul">Proyectos de Desarrollo Web</h1>
-                <div class="tarjeta">
-                    <article class="card-item" for v-for ="pagina in paginas">
-                        <div class="card-content">
-                            <figure class="card-picture">
-                                <img class="screen" src="./archivos/homeBanking.png" alt="homeBanking" >
-                            </figure>
-    
-                            <div class="card-texts">
-                                <h2 class="titulo-blanco">{{pagina.titulo}}</h2>
-                                <p class="card-paragraph texto-blanco-extralight">{{pagina.descripcion}}</p>
-                            </div>
-
-                            <div class="card-botones">
-                                <a :href="pagina.repo" target="_blank" class="boton-orange">Repositorio</a>
-                                <a :href="pagina.pagina" target="_blank" class="boton-orange">Pagina Web</a>
-                            </div>            
-                        </div>
-                    </article>
-                </div>
-
-                <!-- <div class="card-container">
-                    <div class="card" for v-for ="pagina in paginas">
-                        <a :href="pagina.pagina" target="_blank">
-                            <img class="screen" :src="pagina.imagen" alt="homeBanking">
-                        </a>
-                        <div class="card-descripcion">
-                            <h3 class="titulo-blanco">{{pagina.titulo}}</h3>
-                            <p class="texto-blanco-extralight" >{{pagina.descripcion}}</p>
-                        </div>
-                        <div class="card-botones">
-                            <a :href="pagina.repo" target="_blank" class="boton-orange">Repositorio</a>
-                            <a :href="pagina.pagina" target="_blank" class="boton-orange">Pagina Web</a>
-                        </div>
-                    </div>
-                </div> -->
-            </section>
-            <!-- <section class="desing">
-                <div class="img-container" v-for="desing in desings">
-                    <img :src="desing.url" :alt="desing.descripcion">
-                </div>
-            </section> -->
-            <section class="estudios" id="estudios">
-                <h1 class="titulo-blanco">Estudios</h1>
-                <div class="tarjeta">
-                    <div class="card-outline" v-for="estudio in estudios">
-                        <ul>
-                            <li ><p class="titulo-blanco">{{estudio.titulo}}</p></li>
-                        </ul>
-                        <p class="titulo-blanco">{{estudio.institucion}}</p>
-                        <p >{{estudio.fecha}}</p>
-                        <p >{{estudio.descripcion}}</p>
-                    </div>
-                </div>
-            </section>
-            <section class="contacto" id="contacto">
-                <h1 class="titulo-azul">Contacto</h1>
-                <div class="img-contacto">
-                    <img src="./archivos/simplificado1.png" alt="logo_horizontal">
-                </div>
-                <div class="iconos">
-                    <a href="https://wa.me/5493794097220" target="_blank" class="icono-contacto" @click=""><img src="./archivos/whatsapp (1).png" alt="icono"></a>
-                    <a href="walterperalta896@gmail.com" target="_blank" class="icono-contacto" @click=""><img src="./archivos/email.png" alt="icono"></a>
-                    <a href="https://www.linkedin.com/in/walteroperalta/" target="_blank" class="icono-contacto" @click=""><img src="./archivos/linkedin.png" alt="icono"></a>
-                    <a href="https://github.com/walterperalta" target="_blank" class="icono-contacto" @click=""><img src="./archivos/github.png" alt="icono"></a>
-                </div>
-                <a href="./archivos/Walter Orlando Peralta1.pdf" target="_blank" class="boton-orange">Descargar CV</a>
-            </section>
-
-        </main>
-        <footer>
-            <p>Walter Peralta © 2022</p>
-        </footer>
+        <!-- <h1 v-text="title"></h1> -->
+        <principal></principal>
     </div>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script src="https://unpkg.com/vue@3"></script>
-    <script src="./scripts/funciones.js"></script>
+    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://unpkg.com/vue@3"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.14"></script>
+    <script src="./components/Contacto.js"></script>
+    <script src="./components/CardEstudio.js"></script>
+    <script src="./components/Estudios.js"></script>
+    <script src="./components/CardProyecto.js"></script>
+    <script src="./components/ProyectosWeb.js"></script>
+    <script src="./components/Skills.js"></script>
+    <script src="./components/BarraNavegacion.js"></script>
+    <script src="./components/Principal.js"></script>
+    <script>
+        let vm = new Vue({
+            el : '#app',
+            // data () {
+            //     return {
+            //         title : "hola mundo desde vue.js"
+            //     }
+            // }
+        })
+        Vue.config.devtools = true
+    </script>
+
 </body>
 </html>

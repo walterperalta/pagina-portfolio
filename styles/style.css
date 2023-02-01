@@ -41,6 +41,9 @@ Bold 700
 .texto-blanco-extralight{
     font-weight: 200 !important;
 }
+.texto-blanco-SemiBold{
+    font-weight: 600 !important;
+}
 
 * {
     margin: 0;
@@ -180,6 +183,11 @@ main {
 }
 
 /* Seccion Skills */
+
+.centrar {
+    display: flex;
+    justify-content: center;
+}
 
 .container {
     width: 75% !important;
@@ -347,6 +355,13 @@ p{
 
 .card-paragraph {
     text-align: center;
+}
+
+.card-tecnologias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
 }
 
 .card-botones {

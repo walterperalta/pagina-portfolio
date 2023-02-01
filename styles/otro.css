@@ -1,0 +1,29 @@
+.tarjeta {
+    width: 90%;
+    margin: 0 auto;
+    padding: 60px 0;
+    max-width: 1200px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 3.5em;
+    flex-wrap: wrap;
+}
+
+.card-item {
+    background-color: white;
+    padding-bottom: 3em;
+    flex-basis: 280px;
+    max-width: 450px;
+    flex-grow: 1;
+}
+
+.card-content {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.card-picture {
+    width;
+}
